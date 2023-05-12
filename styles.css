@@ -119,6 +119,12 @@ a {
 	gap: 12px;
 	max-width: 100%;
 	overflow-x: auto;
+	/* attemp to hide scrollbar */
+	-ms-overflow-style: none; /* Internet Explorer 10+ */
+	scrollbar-width: none; /* Firefox */
+}
+.product-carousel::-webkit-scrollbar {
+	display: none; /* Safari and Chrome */
 }
 
 .product {
@@ -219,15 +225,9 @@ a {
 	.section-header a {
 		border-color: black;
 	}
-	/* attemp to hide scrollbar */
 	.product-carousel {
 		gap: 32px;
 		overflow-x: auto;
-		-ms-overflow-style: none; /* Internet Explorer 10+ */
-		scrollbar-width: none; /* Firefox */
-	}
-	.product-carousel::-webkit-scrollbar {
-		display: none; /* Safari and Chrome */
 	}
 	.product:first-child {
 		margin-left: 18%;
